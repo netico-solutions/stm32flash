@@ -1,5 +1,7 @@
 PREFIX = /usr/local
-CFLAGS += -Wall -g
+export CFLAGS += -Wall -g --sysroot=${URTU_SYSROOT}
+export CC = arm-linux-gnueabihf-gcc
+export AR = arm-linux-gnueabihf-ar
 
 INSTALL = install
 
